@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "crystal-space",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-01",
+  "kv_namespaces": [
+    {
+      "binding": "SPACE_KV","id": "99da806e51bc4f639e3de5f4c1489a0c"
+    }
+  ]
+}

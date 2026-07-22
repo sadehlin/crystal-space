@@ -1,0 +1,23 @@
+{
+  "name": "crystal-space",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Backend for Crystal's Space — a private chat where Crystal updates Married in Cabo budget/vendor/site content, saved instantly to Cloudflare KV.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "cloudflare": {
+    "bindings": {
+      "ANTHROPIC_API_KEY": {
+        "description": "Your Claude API key from console.anthropic.com (starts with sk-ant-). Powers Crystal's replies."
+      },
+      "SPACE_PIN": {
+        "description": "A short PIN only you and Crystal know (e.g. a 4-6 digit code). Locks this chat so only she can use it."
+      }
+    }
+  }
+}

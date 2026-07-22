@@ -1,0 +1,5 @@
+# Copy this file to .dev.vars for local development, or fill these in
+# through the Cloudflare dashboard / "Deploy to Cloudflare" setup screen.
+
+ANTHROPIC_API_KEY=sk-ant-your-key-here
+SPACE_PIN=1234
